@@ -9,3 +9,5 @@ At the end of this script all accounts that were listed with simple passwords ha
 This runs on a Windows server with a copy of the AD database dumped out using the `ntdsutil` tool.  It then uses a variety of open source or free (blat) to use tools to check for low hanging fruit.
 
 Note: this was written over 5 years ago, probably a little more and no doubt things have moved on, I recommend checking out [DSInternals](https://www.dsinternals.com/en/) the creator of the `ntdsaudit` tool, but this may still be useful if your infrastructure hasn't moved on yet ;-)
+
+This is provided as is, I no longer have access to an AD environment to test or rework this solution, but I'm pretty certain it could be re-written in powershell now removing some of the tooling dependencies and improving the overall quality of the code.
