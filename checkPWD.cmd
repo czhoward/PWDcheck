@@ -103,8 +103,8 @@ for /f %%a in (%OUTPUT%\%Day%.std.txt) do (
 echo Force failed accounts to change password at next logon - complete >> %LOG%
 
 REM delete AD files
-rd /s/q "C:\weakPWD\ADdump\Active Directory"
-rd /s/q "C:\weakPWD\ADdump\registry"
+rd /s/q "%SCRATCH%\Active Directory"
+rd /s/q "%SCRATCH%\registry"
 
 exit /b
 
