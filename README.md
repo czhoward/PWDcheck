@@ -4,7 +4,7 @@ Script to identify weak passwords in use from an AD dump.
 
 This was originally (and still is) a quickly knocked together solution to running automated checks against AD accounts to identify and force people to change weak passwords.  It's all pretty simple, so you might just want to use it as a guide to stepping through the process manually to get an idea of how many people are using too simplistic passwords. I recommend checking the [NIST](https://www.nist.gov/) guidelines for latest best practices in password management.
 
-At the end of this script all accounts that were listed with simple passwords have the password age reset to 0 forcing a password change at next login.
+At the end of this script all accounts that were listed with simple passwords have the password age reset to 0 forcing a password change at next login. You can quite easily add a `blat` here that emails the user with an explanation of good password guidelines.
 
 This runs on a Windows server with a copy of the AD database dumped out using the `ntdsutil` tool.  It then uses a variety of open source or free (blat) to use tools to check for low hanging fruit.
 
